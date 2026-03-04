@@ -8,7 +8,7 @@
             "users_file": "00Dfif000000C2o.csv",
             "max_duration_in_mins": 7,
             "ramp_up_interval_millis": 1000,
-            "users_count": 201,
+            "users_count": 1,
             "scripts": [
                 {
                     "script_name": "CCASVoiceCall.spec.js",
