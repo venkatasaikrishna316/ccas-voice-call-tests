@@ -1,0 +1,26 @@
+{
+  "name": "playwright-service",
+  "version": "1.0.0",
+  "description": "Playwright for Service Cloud",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/playwright-service/playwright-service"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:longevity": "npx playwright test test-plans/playwright/CCASVoiceLongevity.spec.js",
+    "lint": "eslint tests/",
+    "lint:fix": "eslint --fix tests/"
+  },
+  "engines": {
+    "npm": ">=9.1.0",
+    "node": ">=18.10.0"
+  },
+  "author": "Performance Engineering - Service Cloud",
+  "private": true,
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "max_duration": 10,
+    "tasks": [
+        {
+            "load_type": "playwright",
+            "version": "1.0.3",
+            "task_name": "CCASVoiceCall-flow",
+            "users_file": "00Dfif000000C2o.csv",
+            "max_duration_in_mins": 7,
+            "ramp_up_interval_millis": 1000,
+            "users_count": 201,
+            "scripts": [
+                {
+                    "script_name": "CCASVoiceCall.spec.js",
+                    "user_allocation_percent": 100,
+                    "arguments": {
+                        "username": "loadtest_user_1769058836231@nativeorg.com",
+                        "password": "123456",
+                        "queueName": "Queue",
+                        "server": "https://sdb706.perf3w.sfdc-x579t5.pc-rnd.salesforce.com/",
+                        "app": "Service Console",
+                        "auraMode": "PRODDEBUG",
+                        "webrtcGatewayUrl": "https://gateway.webrtc.thb-perf06.unified-engagement1.sfdc-m3mk70.test.salesforce-ccaas.com/",
+                        "audioFile": "test-plans/test-asset/roleplay_padded_30secSilence.wav",
+                        "screenshot": "true",
+                        "callWaitTime": "100000",
+                        "AgentWaitTime": "100000",
+                        "thinkTime": "12000",
+                        "defaultTimeout": "10000",
+                        "ccasTimeout": "50000",
+                        "webrtcGatewayTimeout": "10000",
+                        "loginWaitTimeout": "30000"
+                    }
+                }
+            ]
+        }
+    ]
+}
